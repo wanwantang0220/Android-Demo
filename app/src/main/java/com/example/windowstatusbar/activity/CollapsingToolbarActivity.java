@@ -2,6 +2,8 @@ package com.example.windowstatusbar.activity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.windowstatusbar.R;
 import com.example.windowstatusbar.adapter.SingleTypeAdapter;
+import com.example.windowstatusbar.callback.AppBarStateChangeListener;
 import com.example.windowstatusbar.tool.SystemBarHelper;
 
 import java.util.ArrayList;
@@ -22,8 +25,15 @@ public class CollapsingToolbarActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
+
+    @BindView(R.id.toolbar_title)
+    TextView tvTitle;
     @BindView(R.id.recycler_view)
     RecyclerView mRecyclerView;
+    @BindView(R.id.collapsing_toolbar)
+    CollapsingToolbarLayout collapsingToolbar;
+    @BindView(R.id.appbar)
+    AppBarLayout appbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,5 +67,21 @@ public class CollapsingToolbarActivity extends AppCompatActivity {
         });
 
 
+        appbar.addOnOffsetChangedListener(new AppBarStateChangeListener() {
+            @Override
+            public void onStateChanged(AppBarLayout appBarLayout, State state) {
+                if (state == State.EXPANDED) {
+                    //展开状态
+                    tvTitle.setVisibility(View.GONE);
+                } else if (state == State.COLLAPSED) {
+                    //折叠状态
+                    tvTitle.setVisibility(View.VISIBLE);
+                    tvTitle.setText("hello");
+                } else {
+                    //中间状态
+                    tvTitle.setVisibility(View.GONE);
+                }
+            }
+        });
     }
 }

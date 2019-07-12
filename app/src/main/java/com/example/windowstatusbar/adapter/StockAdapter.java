@@ -13,8 +13,8 @@ import android.widget.CompoundButton;
 import com.example.windowstatusbar.R;
 import com.example.windowstatusbar.bean.StickyHeadEntity;
 import com.example.windowstatusbar.bean.StockEntity;
-import com.example.windowstatusbar.holder.RecyclerViewHolder;
-import com.example.windowstatusbar.wave.FullSpanUtil;
+import com.example.windowstatusbar.view.holder.RecyclerViewHolder;
+import com.example.windowstatusbar.view.wave.FullSpanUtil;
 
 import java.util.List;
 

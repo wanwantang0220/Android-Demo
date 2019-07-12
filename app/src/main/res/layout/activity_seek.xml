@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SeekBarActivity">
+    tools:context=".activity.SeekBarActivity">
 
     <SeekBar
         android:id="@+id/sensor_sensitivity"

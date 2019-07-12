@@ -21,7 +21,7 @@
 
     </android.support.v7.widget.RecyclerView>
 
-    <com.example.windowstatusbar.wave.StickyHeadContainer
+    <com.example.windowstatusbar.view.wave.StickyHeadContainer
         android:id="@+id/shc"
         android:layout_width="match_parent"
         android:layout_margin="10dp"
@@ -30,6 +30,6 @@
         <include
             layout="@layout/item_stock_sticky_head"/>
 
-    </com.example.windowstatusbar.wave.StickyHeadContainer>
+    </com.example.windowstatusbar.view.wave.StickyHeadContainer>
 
 </RelativeLayout>

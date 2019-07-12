@@ -12,6 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.WindowManager;
 
+import com.example.windowstatusbar.callback.AppBarStateChangeListener;
+import com.example.windowstatusbar.callback.GlideImageLoader;
 import com.example.windowstatusbar.util.AppConstant;
 import com.youth.banner.Banner;
 
@@ -137,10 +139,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initBanner() {
-        List images = new ArrayList<>();
-        images.add(R.mipmap.pic1);
-        images.add(R.mipmap.pic2);
-        images.add(R.mipmap.pic3);
+        List<Integer> images = new ArrayList<>();
+        images.add(R.mipmap.h1);
+        images.add(R.mipmap.h2);
+        images.add(R.mipmap.h3);
         banner.setImages(images).setImageLoader(new GlideImageLoader()).start();
     }
 }

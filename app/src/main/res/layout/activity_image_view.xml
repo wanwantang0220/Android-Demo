@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImageViewActivity">
+    tools:context=".activity.ImageViewActivity">
 
-    <com.example.windowstatusbar.ArcView
+    <com.example.windowstatusbar.view.ArcView
         android:id="@+id/arc_view"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <com.example.windowstatusbar.ArcImageView
+    <com.example.windowstatusbar.view.ArcImageView
         android:id="@+id/arc_image_view"
         android:layout_width="match_parent"
         android:layout_height="200dp"

@@ -22,9 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".TapBarMenuActivity"></activity>
-        <activity android:name=".WaveStockActivity" />
-        <activity android:name=".WaveSlideActivity" />
+        <activity android:name=".activity.TapBarMenuActivity"/>
+        <activity android:name=".activity.WaveStockActivity" />
+        <activity android:name=".activity.WaveSlideActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -36,17 +36,17 @@
                 android:resource="@xml/file_paths_public" />
         </provider>
 
-        <activity android:name=".ShareSdkActivity" />
-        <activity android:name=".WebViewActivity" />
-        <activity android:name=".SelectViewActivity" />
-        <activity android:name=".MyDialogActivity" />
+        <activity android:name=".activity.ShareSdkActivity" />
+        <activity android:name=".activity.WebViewActivity" />
+        <activity android:name=".activity.SelectViewActivity" />
+        <activity android:name=".activity.MyDialogActivity" />
         <activity android:name=".ImageCompressActivity" />
-        <activity android:name=".SeekBarActivity" />
-        <activity android:name=".ShareElementTwoActivity" />
-        <activity android:name=".ShareElementActivity" />
-        <activity android:name=".BannerActivity" />
-        <activity android:name=".ButtomDialogActivity" />
-        <activity android:name=".PopupActivity" />
+        <activity android:name=".activity.SeekBarActivity" />
+        <activity android:name=".activity.ShareElementTwoActivity" />
+        <activity android:name=".activity.ShareElementActivity" />
+        <activity android:name=".activity.BannerActivity" />
+        <activity android:name=".activity.ButtomDialogActivity" />
+        <activity android:name=".activity.PopupActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,14 +56,14 @@
         </activity>
         <activity android:name=".arc_header_view.ArcHeaderActivity" />
         <activity android:name=".arc_header_view.ArcHeaderImageActivity" />
-        <activity android:name=".GlideActivity" />
-        <activity android:name=".CardViewActivity" />
-        <activity android:name=".ImageViewActivity" />
-        <activity android:name=".StatusBarActivity" />
+        <activity android:name=".activity.GlideActivity" />
+        <activity android:name=".activity.CardViewActivity" />
+        <activity android:name=".activity.ImageViewActivity" />
+        <activity android:name=".activity.StatusBarActivity" />
         <activity
-            android:name=".MatisseActivity"
+            android:name=".activity.MatisseActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".TabActivity" />
+        <activity android:name=".activity.TabActivity" />
         <activity
             android:name=".wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -93,10 +93,10 @@
             android:value="5cdb6eb24ca3577cf4000d92" />
 
         <activity
-            android:name=".TransitionNextActivity"
+            android:name=".activity.TransitionNextActivity"
             android:theme="@style/BaseAppTheme" />
         <activity
-            android:name=".TransitionActivity"
+            android:name=".activity.TransitionActivity"
             android:theme="@style/BaseAppTheme" />
     </application>
 

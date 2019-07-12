@@ -20,11 +20,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.TapBarMenuActivity"/>
-        <activity android:name=".activity.WaveStockActivity" />
-        <activity android:name=".activity.WaveSlideActivity" />
+
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -98,6 +96,15 @@
         <activity
             android:name=".activity.TransitionActivity"
             android:theme="@style/BaseAppTheme" />
+
+        <activity
+            android:name=".activity.CollapsingToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.TapBarMenuActivity" />
+        <activity android:name=".activity.WaveStockActivity" />
+        <activity android:name=".activity.WaveSlideActivity" />
+
     </application>
 
 </manifest>

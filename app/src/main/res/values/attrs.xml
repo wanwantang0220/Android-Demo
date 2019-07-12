@@ -77,13 +77,13 @@
         <attr name="android:enabled" />
     </declare-styleable>
     <declare-styleable name="WaveSideBarView">
-        <attr name="sidebarTextColor" format="color|reference"/>
-        <attr name="sidebarBackgroundColor" format="color|reference"/>
-        <attr name="sidebarChooseTextColor" format="color|reference"/>
-        <attr name="sidebarTextSize" format="dimension"/>
-        <attr name="sidebarLargeTextSize" format="dimension"/>
-        <attr name="sidebarRadius" format="dimension"/>
-        <attr name="sidebarBallRadius" format="dimension"/>
+        <attr name="sidebarTextColor" format="color|reference" />
+        <attr name="sidebarBackgroundColor" format="color|reference" />
+        <attr name="sidebarChooseTextColor" format="color|reference" />
+        <attr name="sidebarTextSize" format="dimension" />
+        <attr name="sidebarLargeTextSize" format="dimension" />
+        <attr name="sidebarRadius" format="dimension" />
+        <attr name="sidebarBallRadius" format="dimension" />
     </declare-styleable>
     <declare-styleable name="TapBarMenu">
         <attr name="tbm_backgroundColor" format="color" />
@@ -102,5 +102,10 @@
             <enum name="top" value="4" />
         </attr>
         <attr name="tbm_showItems" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomBehavior">
+        <attr name="anchor_id" />
+        <attr name="bottom_padding" format="float|reference" />
     </declare-styleable>
 </resources>

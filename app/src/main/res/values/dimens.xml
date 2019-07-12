@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="convenientbanner_margin">16dp</dimen>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="item_margin_horizontal">24dp</dimen>
+    <dimen name="item_margin_vertical">8dp</dimen>
+
+
+    <dimen name="app_normal_margin">10dp</dimen>
+    <dimen name="app_plus_margin">12dp</dimen>
+    <dimen name="app_tiny_margin">4dp</dimen>
+
+    <dimen name="font_larger">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">10sp</dimen>
+
+    <dimen name="bottom_dialog_top_icon">38dp</dimen>
+    <dimen name="bottom_dialog_left_icon">32dp</dimen>
+
+    <dimen name="textSize_sidebar">10sp</dimen>
+    <dimen name="large_textSize_sidebar">32sp</dimen>
+    <dimen name="textSize_sidebar_choose">12sp</dimen>
+    <dimen name="textSize_sidebar_padding">20sp</dimen>
+    <dimen name="radius_sidebar">20dp</dimen>
+    <dimen name="ball_radius_sidebar">24dp</dimen>
+
+    <dimen name="defaultButtonSize">56dp</dimen>
+
+</resources>

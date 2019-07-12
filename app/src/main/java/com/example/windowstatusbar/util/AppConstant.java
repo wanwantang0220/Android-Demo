@@ -1,0 +1,28 @@
+package com.example.windowstatusbar.util;
+
+public class AppConstant {
+    public static final String LIST_TITLE1 = "StatusBar";
+    public static final String LIST_TITLE2 = "锯齿";
+    public static final String LIST_TITLE3 = "锯齿";
+    public static final String LIST_TITLE4 = "锯齿";
+    public static final String LIST_TITLE5 = "CardView";
+    public static final String LIST_TITLE6 = "Glide";
+    public static final String LIST_TITLE7 = "图片选择器";
+    public static final String LIST_TITLE8 = "tab";
+    public static final String LIST_TITLE9 = "popupwindow";
+    public static final String LIST_TITLE10 = "bottom dialog";
+    public static final String LIST_TITLE11 = "BannerActivity";
+    public static final String LIST_TITLE12 = "共享组件";
+    public static final String LIST_TITLE13 = "SeekBar";
+    public static final String LIST_TITLE14 = "ImageCompress";
+    public static final String LIST_TITLE15 = "MyDialog";
+    public static final String LIST_TITLE16 = "SelectView";
+    public static final String LIST_TITLE17 = "WebView";
+    public static final String LIST_TITLE18 = "分享";
+    public static final String LIST_TITLE19 = "转场动画";
+    public static final String LIST_TITLE20 = "RecycleView title 分类 吸顶  WaveSlide";
+
+    public static final String LIST_TITLE21 = "带粘性的recycleview  ,一级标题悬浮";
+    public static final String LIST_TITLE22 = "TapBarMenu";
+
+}

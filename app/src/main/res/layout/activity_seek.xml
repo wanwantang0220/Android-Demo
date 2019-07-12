@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SeekBarActivity">
+
+    <SeekBar
+        android:id="@+id/sensor_sensitivity"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="360dip"
+        android:layout_height="64dip"
+        android:max="100"
+        android:maxHeight="2dip"
+        android:minHeight="2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingBottom="2dip"
+        android:thumb="@drawable/shape_thumb_icon"
+        android:progressDrawable="@drawable/video_seekbar_drawable"
+        android:progress="0" />
+
+   <com.example.windowstatusbar.view.BubbleSeekBar
+       android:id="@+id/bsb"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp" />
+
+</LinearLayout>

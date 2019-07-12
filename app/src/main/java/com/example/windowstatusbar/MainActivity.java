@@ -87,9 +87,7 @@ public class MainActivity extends AppCompatActivity {
             public void onStateChanged(AppBarLayout appBarLayout, AppBarStateChangeListener.State state) {
                 Log.d("STATE", state.name());
                 if (state == State.EXPANDED) {
-
                     //展开状态
-
                 } else if (state == State.COLLAPSED) {
                     mCollapsingToolbarLayout.setContentScrimColor(Color.WHITE);
                     //折叠状态

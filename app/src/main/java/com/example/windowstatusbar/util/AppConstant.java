@@ -27,5 +27,6 @@ public class AppConstant {
 
 
     public static final String LIST_TITLE23 = "沉浸式状态栏 ，CollapsingToolbarLayout 状态栏颜色";
+    public static final String LIST_TITLE24 = "RecyclerView 加滚动条";
 
 }

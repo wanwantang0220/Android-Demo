@@ -37,4 +37,7 @@
     <color name="color_red_light">#FFB4B6</color>
     <color name="color_blue">#03A9F4</color>
     <color name="color_gray_light">#F5F5F5</color>
+
+    <color name="scroll_bar_track_bg">#FF6A6E</color>
+    <color name="scroll_bar_thumb_bg">#00b4aa</color>
 </resources>

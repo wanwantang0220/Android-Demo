@@ -23,7 +23,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.windowstatusbar.fileprovider"
@@ -96,7 +95,6 @@
         <activity
             android:name=".activity.TransitionActivity"
             android:theme="@style/BaseAppTheme" />
-
         <activity
             android:name=".activity.CollapsingToolbarActivity"
             android:screenOrientation="portrait"
@@ -104,6 +102,7 @@
         <activity android:name=".activity.TapBarMenuActivity" />
         <activity android:name=".activity.WaveStockActivity" />
         <activity android:name=".activity.WaveSlideActivity" />
+        <activity android:name=".activity.RecyclerViewIndicatorActivity" />
 
     </application>
 

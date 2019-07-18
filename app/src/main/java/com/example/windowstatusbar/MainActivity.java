@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initRecyle() {
+        mList.add(AppConstant.LIST_TITLE25);
         mList.add(AppConstant.LIST_TITLE24);
         mList.add(AppConstant.LIST_TITLE23);
         mList.add(AppConstant.LIST_TITLE22);

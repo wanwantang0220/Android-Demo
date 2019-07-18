@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.windowstatusbar.activity.CollapsingToolbarActivity;
 import com.example.windowstatusbar.activity.PopupActivity;
 import com.example.windowstatusbar.activity.RecyclerViewIndicatorActivity;
+import com.example.windowstatusbar.activity.SearchViewActivity;
 import com.example.windowstatusbar.activity.SeekBarActivity;
 import com.example.windowstatusbar.activity.ShareElementActivity;
 import com.example.windowstatusbar.activity.ShareSdkActivity;
@@ -109,6 +110,8 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                     mContext.startActivity(new Intent(mContext, CollapsingToolbarActivity.class));
                 } else if (title.equals(AppConstant.LIST_TITLE24)) {
                     mContext.startActivity(new Intent(mContext, RecyclerViewIndicatorActivity.class));
+                } else if (title.equals(AppConstant.LIST_TITLE25)) {
+                    mContext.startActivity(new Intent(mContext, SearchViewActivity.class));
                 }
             }
         });

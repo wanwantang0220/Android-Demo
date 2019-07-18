@@ -25,8 +25,8 @@ public class AppConstant {
     public static final String LIST_TITLE21 = "带粘性的recycleview  ,一级标题悬浮";
     public static final String LIST_TITLE22 = "TapBarMenu";
 
-
     public static final String LIST_TITLE23 = "沉浸式状态栏 ，CollapsingToolbarLayout 状态栏颜色";
     public static final String LIST_TITLE24 = "RecyclerView 加滚动条";
+    public static final String LIST_TITLE25 = "Search View 搜索";
 
 }

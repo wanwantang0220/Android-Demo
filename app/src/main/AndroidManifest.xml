@@ -23,6 +23,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.windowstatusbar.fileprovider"
@@ -103,7 +104,12 @@
         <activity android:name=".activity.WaveStockActivity" />
         <activity android:name=".activity.WaveSlideActivity" />
         <activity android:name=".activity.RecyclerViewIndicatorActivity" />
-
+        <activity
+            android:name=".activity.SearchViewSecondActivity"
+            />
+        <activity
+            android:name=".activity.SearchViewActivity"
+           />
     </application>
 
 </manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AnimatorViewActivity">
+
+
+    <com.example.windowstatusbar.view.LoadingImageView
+        android:id="@+id/liv1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/test3_bg"
+        app:auto_start_anim="true"
+        app:mask_color="@color/page3_end_color" />
+
+
+    <com.example.windowstatusbar.view.LoadingImageView
+        android:id="@+id/liv2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/liv1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/test3_bg"
+        app:auto_start_anim="true"
+        app:mask_color="@color/page3_end_color" />
+
+    <com.example.windowstatusbar.view.LoadingImageView
+        android:id="@+id/liv3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/liv2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/test3_bg"
+        app:auto_start_anim="true"
+        app:mask_color="@color/page3_end_color" />
+
+
+    <com.example.windowstatusbar.view.LoadingImageView
+        android:id="@+id/liv4"
+        android:layout_below="@id/liv3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/test3_bg"
+        app:auto_start_anim="true"
+        app:mask_color="@color/page3_end_color" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转web"/>
+
+</RelativeLayout>

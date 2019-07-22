@@ -71,7 +71,9 @@ public class RecyclerViewIndicatorActivity extends AppCompatActivity {
                 int extent = recyclerView.computeHorizontalScrollExtent();
                 //可滑动距离
                 float distance = range - extent;
-
+                Log.i("TAG", "range = " + range);
+                Log.i("TAG", "extent = " + extent);
+                Log.i("TAG", "distance = " + distance);
 
                 //可滑动距离大于0才能滑动
                 if (distance > 0) {
@@ -83,6 +85,10 @@ public class RecyclerViewIndicatorActivity extends AppCompatActivity {
                     int indicatorWidth = flIndicatorContainer.getWidth() - flIndicator.getWidth();
                     //滚动的距离
                     float scrollDistance = indicatorWidth * scale;
+
+                    Log.i("TAG", "scale = " + scale);
+                    Log.i("TAG", "indicatorWidth = " + indicatorWidth);
+                    Log.i("TAG", "scrollDistance = " + scrollDistance);
 
                     //设置滚动条滚动
                     flIndicator.setTranslationX(scrollDistance);
@@ -100,6 +106,8 @@ public class RecyclerViewIndicatorActivity extends AppCompatActivity {
         mList.add(R.mipmap.z8);
         mList.add(R.mipmap.z7);
         mList.add(R.mipmap.z6);
-
+        mList.add(R.mipmap.pic1);
+        mList.add(R.mipmap.pic2);
+        mList.add(R.mipmap.pic3);
     }
 }

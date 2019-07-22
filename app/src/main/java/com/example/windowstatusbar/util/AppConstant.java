@@ -29,4 +29,6 @@ public class AppConstant {
     public static final String LIST_TITLE24 = "RecyclerView 加滚动条";
     public static final String LIST_TITLE25 = "Search View 搜索";
 
+    public static final String LIST_TITLE26 = "动画进度";
+
 }

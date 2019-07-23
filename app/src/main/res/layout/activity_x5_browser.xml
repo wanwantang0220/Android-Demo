@@ -11,15 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+
     <com.example.windowstatusbar.view.LoadingImageView
         android:id="@+id/liv1"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
         android:src="@drawable/test3_bg"
         app:auto_start_anim="true"
         app:mask_color="@color/page3_end_color" />
-
 
 </RelativeLayout>

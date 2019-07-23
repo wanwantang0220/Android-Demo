@@ -21,7 +21,7 @@ import com.example.windowstatusbar.view.LoadingImageView;
 public class BrowserActivity extends AppCompatActivity {
 
 
-    WebView webView;
+    WebView mWebView;
     LoadingImageView liv1;
     private String url = "http://m.ndlib.cn/03/html/index.html";
 
@@ -29,7 +29,7 @@ public class BrowserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_x5_browser);
-        webView = findViewById(R.id.web_view);
+        mWebView = findViewById(R.id.web_view);
         liv1 = findViewById(R.id.liv1);
         liv1.setMaskOrientation(LoadingImageView.MaskOrientation.LeftToRight);
 
@@ -38,7 +38,7 @@ public class BrowserActivity extends AppCompatActivity {
             url = getIntent().getStringExtra("URL");
         }
 
-        webView.setWebViewClient(new WebViewClient() {
+        mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
@@ -100,38 +100,37 @@ public class BrowserActivity extends AppCompatActivity {
             }
         });
 
-        WebSettings webSettings = webView.getSettings();
+        WebSettings webSettings = mWebView.getSettings();
 
         //设置WebView是否允许执行JavaScript脚本，默认false，不允许
         webSettings.setJavaScriptEnabled(true);
         //设置WebView是否使用其内置的变焦机制，该机制结合屏幕缩放控件使用，默认是false，不使用内置变焦机制
-//        webSettings.setAllowContentAccess(true);
-//        //设置是否开启数据库存储API权限，默认false，未开启，可以参考setDatabasePath(String path)
-//        webSettings.setDatabaseEnabled(true);
-//        //设置是否开启DOM存储API权限，默认false，未开启，设置为true，WebView能够使用DOM storage API
-//        webSettings.setDomStorageEnabled(true);
-//        //设置Application缓存API是否开启，默认false，设置有效的缓存路径参考setAppCachePath(String path)方法
-//        webSettings.setAppCacheEnabled(true);
-//        //设置WebView是否保存表单数据，默认true，保存数据。
-//        webSettings.setSaveFormData(false);
+        webSettings.setAllowContentAccess(true);
+        //设置是否开启数据库存储API权限，默认false，未开启，可以参考setDatabasePath(String path)
+        webSettings.setDatabaseEnabled(true);
+        //设置是否开启DOM存储API权限，默认false，未开启，设置为true，WebView能够使用DOM storage API
+        webSettings.setDomStorageEnabled(true);
+        //设置Application缓存API是否开启，默认false，设置有效的缓存路径参考setAppCachePath(String path)方法
+        webSettings.setAppCacheEnabled(true);
+        //设置WebView是否保存表单数据，默认true，保存数据。
+        webSettings.setSaveFormData(false);
         //设置WebView是否使用viewport，当该属性被设置为false时，加载页面的宽度总是适应WebView控件宽度；
-        // 当被设置为true，当前页面包含viewport属性标签，在标签中指定宽度值生效，如果页面不包含viewport标签，无法提供一个宽度值，这个时候该方法将被使用。
-//        webSettings.setUseWideViewPort(true);
-//        //设置WebView是否使用预览模式加载界面。
-//        webSettings.setLoadWithOverviewMode(true);
+        //当被设置为true，当前页面包含viewport属性标签，在标签中指定宽度值生效，如果页面不包含viewport标签，无法提供一个宽度值，这个时候该方法将被使用。
+        webSettings.setUseWideViewPort(true);
+        //设置WebView是否使用预览模式加载界面。
+        webSettings.setLoadWithOverviewMode(true);
 
-
-        webView.loadUrl(url);
-
+        mWebView.loadUrl(url);
     }
 
 
     @Override
     protected void onDestroy() {
-        if (webView != null) {
-            webView.removeAllViews();
-            webView.destroy();
+        if (mWebView != null) {
+            mWebView.removeAllViews();
+            mWebView.destroy();
         }
+        liv1.onDetachedFromWindow();
         super.onDestroy();
     }
 }

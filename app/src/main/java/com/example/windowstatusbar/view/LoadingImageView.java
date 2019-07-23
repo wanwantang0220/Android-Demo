@@ -5,6 +5,7 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
@@ -35,7 +36,9 @@ public class LoadingImageView extends android.support.v7.widget.AppCompatImageVi
     private float mScaleX, mScaleY;
     private int mGravity = Gravity.BOTTOM;
     private int mOrientaion = ClipDrawable.VERTICAL;
-    private int mMaskOrientation = MaskOrientation.BottomToTop;
+    private int mMaskOrientation = MaskOrientation.LeftToRight;
+    private Context mContext;
+
 
     //Loading oriention
     public static final class MaskOrientation {
@@ -52,12 +55,14 @@ public class LoadingImageView extends android.support.v7.widget.AppCompatImageVi
 
     public LoadingImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        mContext = context;
         init();
         initAttrs(context, attrs);
     }
 
     public LoadingImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        mContext = context;
         init();
         initAttrs(context, attrs);
     }
@@ -108,7 +113,7 @@ public class LoadingImageView extends android.support.v7.widget.AppCompatImageVi
     }
 
     @Override
-    protected void onDetachedFromWindow() {
+    public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         stopAnim();
     }
@@ -130,12 +135,11 @@ public class LoadingImageView extends android.support.v7.widget.AppCompatImageVi
     }
 
 
-
     /**
      * combine tow bitmap to one bitmap
      */
     private Bitmap combineBitmap(Bitmap bg, Bitmap fg) {
-        Bitmap bmp = Bitmap.createBitmap(mImageWidth, mImageHeight, Bitmap.Config.ARGB_8888);
+        Bitmap bmp = Bitmap.createBitmap(mImageWidth, mImageHeight, Bitmap.Config.ARGB_4444);
         Canvas canvas = new Canvas(bmp);
         canvas.drawBitmap(bg, 0, 0, null);
         canvas.drawBitmap(fg, 0, 0, mImagePaint);
@@ -151,7 +155,8 @@ public class LoadingImageView extends android.support.v7.widget.AppCompatImageVi
         mImageWidth = drawable.getIntrinsicWidth();
         mImageHeight = drawable.getIntrinsicHeight();
 
-        Bitmap fgBmp = Bitmap.createBitmap(mImageWidth, mImageHeight, Bitmap.Config.ARGB_8888);
+
+        Bitmap fgBmp = BitmapFactory.decodeResource(mContext.getResources(), R.drawable.test3_bg).copy(Bitmap.Config.ARGB_8888, true);
         Canvas fgCanvas = new Canvas(fgBmp);
         fgCanvas.drawColor(maskColor);
 

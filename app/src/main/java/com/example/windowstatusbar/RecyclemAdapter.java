@@ -11,12 +11,14 @@ import android.widget.TextView;
 
 import com.example.windowstatusbar.activity.AnimatorViewActivity;
 import com.example.windowstatusbar.activity.CollapsingToolbarActivity;
+import com.example.windowstatusbar.activity.LottieJsonActivity;
 import com.example.windowstatusbar.activity.PopupActivity;
 import com.example.windowstatusbar.activity.RecyclerViewIndicatorActivity;
 import com.example.windowstatusbar.activity.SearchViewActivity;
 import com.example.windowstatusbar.activity.SeekBarActivity;
 import com.example.windowstatusbar.activity.ShareElementActivity;
 import com.example.windowstatusbar.activity.ShareSdkActivity;
+import com.example.windowstatusbar.activity.SplashActivity;
 import com.example.windowstatusbar.activity.StatusBarActivity;
 import com.example.windowstatusbar.activity.TabActivity;
 import com.example.windowstatusbar.activity.TapBarMenuActivity;
@@ -115,6 +117,10 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                     mContext.startActivity(new Intent(mContext, SearchViewActivity.class));
                 }else if (title.equals(AppConstant.LIST_TITLE26)) {
                     mContext.startActivity(new Intent(mContext, AnimatorViewActivity.class));
+                }else if (title.equals(AppConstant.LIST_TITLE27)) {
+                    mContext.startActivity(new Intent(mContext, SplashActivity.class));
+                }else if (title.equals(AppConstant.LIST_TITLE28)) {
+                    mContext.startActivity(new Intent(mContext, LottieJsonActivity.class));
                 }
             }
         });

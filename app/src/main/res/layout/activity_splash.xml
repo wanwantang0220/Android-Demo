@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.windowstatusbar.widget.ExtendedViewPager
+        android:id="@+id/vp_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:overScrollMode="ifContentScrolls"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <!-- Add as a direct child of your ViewPager -->
+        <com.example.windowstatusbar.widget.CirclePageIndicator
+            android:id="@+id/view_pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="80dp"
+            app:fillColor="@color/colorPrimary"
+            app:radius="4dp"
+            app:strokeColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="@string/app_name" />
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -109,6 +109,8 @@
         <activity android:name=".activity.SearchViewActivity" />
         <activity android:name=".activity.BrowserActivity" />
         <activity android:name=".activity.AnimatorViewActivity" />
+        <activity android:name=".activity.LottieJsonActivity"/>
+        <activity android:name=".activity.SplashActivity" />
     </application>
 
 </manifest>

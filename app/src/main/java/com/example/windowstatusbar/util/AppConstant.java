@@ -21,14 +21,13 @@ public class AppConstant {
     public static final String LIST_TITLE18 = "分享";
     public static final String LIST_TITLE19 = "转场动画";
     public static final String LIST_TITLE20 = "RecycleView title 分类 吸顶  WaveSlide";
-
     public static final String LIST_TITLE21 = "带粘性的recycleview  ,一级标题悬浮";
     public static final String LIST_TITLE22 = "TapBarMenu";
-
     public static final String LIST_TITLE23 = "沉浸式状态栏 ，CollapsingToolbarLayout 状态栏颜色";
     public static final String LIST_TITLE24 = "RecyclerView 加滚动条";
     public static final String LIST_TITLE25 = "Search View 搜索";
-
     public static final String LIST_TITLE26 = "动画进度";
+    public static final String LIST_TITLE27 = "开机视频播放";
+    public static final String LIST_TITLE28 = "Lottie json 动画";
 
 }
